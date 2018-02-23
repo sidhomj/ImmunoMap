@@ -1,0 +1,240 @@
+<deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
+  <configuration file="C:\Users\John\Dropbox\PhD\ImmunoMap\ImmunoMap.prj" location="C:\Users\John\Dropbox\PhD\ImmunoMap" name="ImmunoMap" target="target.ezdeploy.standalone" target-name="Application Compiler">
+    <param.appname>ImmunoMap</param.appname>
+    <param.icon />
+    <param.icons />
+    <param.version>1.0</param.version>
+    <param.authnamewatermark>John-William Sidhom</param.authnamewatermark>
+    <param.email>jsidhom1@jhmi.edu</param.email>
+    <param.company />
+    <param.summary />
+    <param.description />
+    <param.screenshot>${PROJECT_ROOT}\logo.png</param.screenshot>
+    <param.guid />
+    <param.installpath.string>\ImmunoMap\</param.installpath.string>
+    <param.installpath.combo>option.installpath.programfiles</param.installpath.combo>
+    <param.logo />
+    <param.install.notes />
+    <param.target.install.notes />
+    <param.intermediate>${PROJECT_ROOT}\ImmunoMap\for_testing</param.intermediate>
+    <param.files.only>${PROJECT_ROOT}\ImmunoMap\for_redistribution_files_only</param.files.only>
+    <param.output>${PROJECT_ROOT}\ImmunoMap\for_redistribution</param.output>
+    <param.logdir>${PROJECT_ROOT}\ImmunoMap</param.logdir>
+    <param.enable.clean.build>false</param.enable.clean.build>
+    <param.user.defined.mcr.options />
+    <param.target.type>subtarget.standalone</param.target.type>
+    <param.support.packages />
+    <param.web.mcr>true</param.web.mcr>
+    <param.package.mcr>false</param.package.mcr>
+    <param.no.mcr>false</param.no.mcr>
+    <param.web.mcr.name>MyAppInstaller_web</param.web.mcr.name>
+    <param.package.mcr.name>MyAppInstaller_mcr</param.package.mcr.name>
+    <param.no.mcr.name>MyAppInstaller_app</param.no.mcr.name>
+    <param.windows.command.prompt>true</param.windows.command.prompt>
+    <param.create.log>false</param.create.log>
+    <param.log.file />
+    <param.native.matlab>false</param.native.matlab>
+    <param.checkbox>false</param.checkbox>
+    <param.example />
+    <param.help.text />
+    <unset>
+      <param.icon />
+      <param.icons />
+      <param.version />
+      <param.company />
+      <param.summary />
+      <param.description />
+      <param.guid />
+      <param.installpath.string />
+      <param.installpath.combo />
+      <param.logo />
+      <param.target.install.notes />
+      <param.intermediate />
+      <param.files.only />
+      <param.output />
+      <param.logdir />
+      <param.enable.clean.build />
+      <param.user.defined.mcr.options />
+      <param.target.type />
+      <param.support.packages />
+      <param.web.mcr />
+      <param.package.mcr />
+      <param.no.mcr />
+      <param.web.mcr.name />
+      <param.package.mcr.name />
+      <param.no.mcr.name />
+      <param.windows.command.prompt />
+      <param.create.log />
+      <param.log.file />
+      <param.native.matlab />
+      <param.checkbox />
+      <param.example />
+      <param.help.text />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}\ImmunoMapQuant.m</file>
+    </fileset.main>
+    <fileset.resources>
+      <file>${PROJECT_ROOT}\biomatrices\blosum100.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\blosum30.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\blosum35.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\blosum40.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\blosum45.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\blosum50.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\blosum55.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\blosum60.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\blosum62.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\blosum65.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\blosum70.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\blosum75.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\blosum80.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\blosum85.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\blosum90.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\blosumn.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\Contents.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\dayhoff.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\gonnet.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\nuc44.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\pam10.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\pam100.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\pam110.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\pam120.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\pam120cdi.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\pam130.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\pam140.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\pam150.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\pam160.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\pam160cdi.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\pam170.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\pam180.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\pam190.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\pam20.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\pam200.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\pam200cdi.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\pam210.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\pam220.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\pam230.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\pam240.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\pam250.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\pam250cdi.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\pam260.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\pam270.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\pam280.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\pam290.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\pam30.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\pam300.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\pam310.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\pam320.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\pam330.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\pam340.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\pam350.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\pam360.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\pam370.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\pam380.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\pam390.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\pam40.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\pam400.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\pam40cdi.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\pam410.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\pam420.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\pam430.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\pam440.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\pam450.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\pam460.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\pam470.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\pam480.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\pam490.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\pam50.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\pam500.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\pam60.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\pam70.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\pam80.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\pam80cdi.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\pam90.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\ramachandranRegions.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\rebase_e.txt</file>
+      <file>${PROJECT_ROOT}\biomatrices\rebase_r.txt</file>
+      <file>${PROJECT_ROOT}\biomatrices\rebase_s.txt</file>
+      <file>${PROJECT_ROOT}\biomatrices\rnadangle.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\rnafoldenergies.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\rnaint1x1.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\rnaint2x1.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\rnaint2x2.m</file>
+      <file>${PROJECT_ROOT}\biomatrices\rnaterminalstack.m</file>
+      <file>${PROJECT_ROOT}\Functions\CalculateDistance.m</file>
+      <file>${PROJECT_ROOT}\Functions\cell2csv.m</file>
+      <file>${PROJECT_ROOT}\Functions\DetermineCentroidSequence.m</file>
+      <file>${PROJECT_ROOT}\Functions\DistanceVector2Seq.m</file>
+      <file>${PROJECT_ROOT}\Functions\ImmunoMap.m</file>
+      <file>${PROJECT_ROOT}\Functions\ImmunoMap_Core.m</file>
+      <file>${PROJECT_ROOT}\Functions\ParseAdaptiveFile.m</file>
+    </fileset.resources>
+    <fileset.package />
+    <fileset.depfun>
+      <file>${PROJECT_ROOT}\ColorsSegments.mat</file>
+      <file>${PROJECT_ROOT}\logo.png</file>
+    </fileset.depfun>
+    <build-deliverables>
+      <file location="${PROJECT_ROOT}\ImmunoMap\for_testing" name="splash.png" optional="false">C:\Users\John\Dropbox\PhD\ImmunoMap\ImmunoMap\for_testing\splash.png</file>
+      <file location="${PROJECT_ROOT}\ImmunoMap\for_testing" name="ImmunoMap.exe" optional="false">C:\Users\John\Dropbox\PhD\ImmunoMap\ImmunoMap\for_testing\ImmunoMap.exe</file>
+      <file location="${PROJECT_ROOT}\ImmunoMap\for_testing" name="readme.txt" optional="true">C:\Users\John\Dropbox\PhD\ImmunoMap\ImmunoMap\for_testing\readme.txt</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>C:\Program Files\MATLAB\R2017b</root>
+      <toolboxes>
+        <toolbox name="fixedpoint" />
+        <toolbox name="matlabcoder" />
+        <toolbox name="matlabhdlcoder" />
+        <toolbox name="embeddedcoder" />
+        <toolbox name="gpucoder" />
+        <toolbox name="polyspacebugfinder" />
+      </toolboxes>
+      <toolbox>
+        <fixedpoint>
+          <enabled>true</enabled>
+        </fixedpoint>
+      </toolbox>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+      <toolbox>
+        <matlabhdlcoder>
+          <enabled>true</enabled>
+        </matlabhdlcoder>
+      </toolbox>
+      <toolbox>
+        <embeddedcoder>
+          <enabled>true</enabled>
+        </embeddedcoder>
+      </toolbox>
+      <toolbox>
+        <gpucoder>
+          <enabled>true</enabled>
+        </gpucoder>
+      </toolbox>
+      <toolbox>
+        <polyspacebugfinder>
+          <enabled>true</enabled>
+        </polyspacebugfinder>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>6.1</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
