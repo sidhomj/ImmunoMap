@@ -221,7 +221,7 @@ else
                 if Reads(i)==1
                     ScorePreOut(i,j)=0;
                 else
-                    ScorePreOut(i,j)=DistanceMatrix3(i,j)*combntns(Reads(i),2);
+                    ScorePreOut(i,j)=DistanceMatrix3(i,j)*nchoosek(Reads(i),2);
                 end
             else
                 ScorePreOut(i,j)=DistanceMatrix3(i,j)*Reads(i)*Reads(j);
@@ -229,7 +229,7 @@ else
         end
     end
 
-    Data.TCRDiversityScore=1-(sum(sum(ScorePreOut))/combntns(sum(Reads),2));
+    Data.TCRDiversityScore=1-(sum(sum(ScorePreOut))/nchoosek(sum(Reads),2));
 end
 
 try
