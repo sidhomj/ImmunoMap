@@ -469,7 +469,11 @@ end
 
 %%Collecte Sequence data from each file selected
 for i=1:size(handles.files.Value,2)
-   Input.fileread=handles.fileref{handles.files.Value(i)};
+    if ischar(handles.fileref)
+        Input.fileread = handles.fileref;
+    else
+        Input.fileread=handles.fileref{handles.files.Value(i)};
+    end
    eval(['Input.' type '=filecutparam;'])
    
    Output=ParseAdaptiveFile(Input);
@@ -552,7 +556,12 @@ for i=1:size(handles.files.Value,2)
     sMarkers.FaceColorData = uint8(255*color2);
     sMarkers.EdgeColorData = uint8(255*color1);
     sMarkers.Size=20;
-    text(x1(1)+0.025*(x1(2)-x1(1)),yc1,char(handles.files.String{handles.files.Value(i)}),'Interpreter','none')
+     if ischar(handles.fileref)
+        text(x1(1)+0.025*(x1(2)-x1(1)),yc1,char(handles.files.String),'Interpreter','none')
+    else
+       text(x1(1)+0.025*(x1(2)-x1(1)),yc1,char(handles.files.String{handles.files.Value(i)}),'Interpreter','none')
+    end
+    
     
 end
 
