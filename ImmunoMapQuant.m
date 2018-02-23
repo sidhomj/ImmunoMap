@@ -594,13 +594,13 @@ end
 %%Run ImmunoMap Metrics on 1 Sample
 Input.fileread=handles.fileref{handles.sample1sel.Value};
 eval(['Input.' type '=filecutparam;'])
-Output1=ParseFile(Input);
-Data1=ImmunoMap(Input,ScoringMatrix,GapPen,threshold,clusterthreshold);
+Output1=ParseAdaptiveFile(Input);
+Data1=ImmunoMap_Core(Input,ScoringMatrix,GapPen,threshold,clusterthreshold);
 
 %%Run ImmunoMap Metrics on 2nd sample
 Input.fileread=handles.fileref{handles.sample2sel.Value};
-Output2=ParseFile(Input);
-Data2=ImmunoMap(Input,ScoringMatrix,GapPen,threshold,clusterthreshold);
+Output2=ParseAdaptiveFile(Input);
+Data2=ImmunoMap_Core(Input,ScoringMatrix,GapPen,threshold,clusterthreshold);
 
 %%Calculate distance matrix for all sequences in 1 sample to all sequences
 %%in another sample
