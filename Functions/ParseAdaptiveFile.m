@@ -17,8 +17,9 @@ end
     header=transpose(header{1});
     numcol=size(header,2);
     data=textscan(fid,repmat('%s',1,numcol),'delimiter','\t');
-    for i=1:size(data,2);
-        data2(:,i)=data{1,i};
+    data2 = cell(size(data{1},1),3);
+    for i=1:3
+        data2(:,i)=data{1,i};   
     end
     data=data2;
     clear data2;
@@ -26,7 +27,7 @@ end
     data=sortrows(data,-3);
     data=data(~cellfun(@(x) isempty(x) || contains(x,'*'), data(:,2)),:);
     
-    raw=[header;data];
+    raw=[header(1:3);data];​
     
 AA=raw(2:end,2);
 Reads=raw(2:end,3);
