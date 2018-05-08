@@ -6,6 +6,10 @@ In order to run ImmunoMap without a MATLAB installation, download .exe file drop
 
 ***MATLAB/ImmunoMap requires a 64-bit architecture*** 
 
+PC Version: 
 https://www.dropbox.com/s/wsdyvd88zh4uiy0/ImmunoMap_GUI.exe?dl=0
+
+Mac Version (beta):
+https://www.dropbox.com/sh/ogsxjvwl7e111n6/AACGtE7djQhPRjXErMndXfcua?dl=0
 
 Further inqueries, contact JSidhom1@jhmi.edu
