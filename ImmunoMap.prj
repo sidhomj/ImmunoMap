@@ -33,10 +33,6 @@
     <param.windows.command.prompt>true</param.windows.command.prompt>
     <param.create.log>false</param.create.log>
     <param.log.file />
-    <param.native.matlab>false</param.native.matlab>
-    <param.checkbox>false</param.checkbox>
-    <param.example />
-    <param.help.text />
     <unset>
       <param.icon />
       <param.icons />
@@ -66,10 +62,6 @@
       <param.windows.command.prompt />
       <param.create.log />
       <param.log.file />
-      <param.native.matlab />
-      <param.checkbox />
-      <param.example />
-      <param.help.text />
     </unset>
     <fileset.main>
       <file>${PROJECT_ROOT}\ImmunoMapQuant.m</file>
@@ -181,13 +173,12 @@
     </build-deliverables>
     <workflow />
     <matlab>
-      <root>C:\Program Files\MATLAB\R2017b</root>
+      <root>C:\Program Files\MATLAB\R2017a</root>
       <toolboxes>
         <toolbox name="fixedpoint" />
         <toolbox name="matlabcoder" />
         <toolbox name="matlabhdlcoder" />
         <toolbox name="embeddedcoder" />
-        <toolbox name="gpucoder" />
         <toolbox name="polyspacebugfinder" />
       </toolboxes>
       <toolbox>
@@ -209,11 +200,6 @@
         <embeddedcoder>
           <enabled>true</enabled>
         </embeddedcoder>
-      </toolbox>
-      <toolbox>
-        <gpucoder>
-          <enabled>true</enabled>
-        </gpucoder>
       </toolbox>
       <toolbox>
         <polyspacebugfinder>
