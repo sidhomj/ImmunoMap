@@ -27,7 +27,7 @@ end
     data=sortrows(data,-3);
     data=data(~cellfun(@(x) isempty(x) || contains(x,'*'), data(:,2)),:);
     
-    raw=[header(1:3);data];​
+    raw=[header(1:3);data];
     
 AA=raw(2:end,2);
 Reads=raw(2:end,3);
@@ -83,9 +83,15 @@ elseif exist('ReadCut');
 end
 
 Output.ReadSum=sum(cell2mat(Reads));
-AA=AA(1:cut);
-Freq=Freq(1:cut);
-Reads=Reads(1:cut);
+if cut <= size(AA,1)
+    AA=AA(1:cut);
+    Freq=Freq(1:cut);
+    Reads=Reads(1:cut);
+else
+    AA=AA;
+    Freq=Freq;
+    Reads=Reads;
+end
 
 concpost=0;
 
